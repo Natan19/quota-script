@@ -22,5 +22,5 @@ USD_QUOTA=$(getCurrentUsdQuota)
 echo "Current USD-BRL quota: $USD_QUOTA"
 
 if [[  "$AMOUNT" -ne 0 ]]; then
-  echo "Current salary in BRL: $(calculateConvertedAmount $USD_QUOTA $AMOUNT)"
+  echo "Current amount in BRL: $(calculateConvertedAmount $USD_QUOTA $AMOUNT)"
 fi
