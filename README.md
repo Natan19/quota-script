@@ -1,7 +1,7 @@
-# quota-script is a simple utilitary to get the value of 1 USD in BRL
-## You can also convert from USD to BRL by passing a value as the first parameter
+## quota-script is a simple utilitary to get the value of 1 USD in BRL
+#### It can also convert from USD to BRL when a value is passed as a first parameter
 
-### Examples:
+#### Examples:
 
 ```shell
 $ ./getquota.sh 
