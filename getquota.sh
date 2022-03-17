@@ -12,12 +12,12 @@ getCurrentUsdQuota() {
   echo $quota
 }
 
-USD_QUOTA=$(getCurrentUsdQuota)
-
 calculateConvertedAmount() {
-  calculated="$(echo "$USD_QUOTA * $AMOUNT" | bc)"
+  calculated="$(echo "$1 * $2" | bc)"
   echo $calculated
 }
 
+USD_QUOTA=$(getCurrentUsdQuota)
+
 echo "Current USD-BRL quota: $USD_QUOTA"
-echo "Current salary in BRL: $(calculateConvertedAmount)"
+echo "Current salary in BRL: $(calculateConvertedAmount $USD_QUOTA $AMOUNT)"
