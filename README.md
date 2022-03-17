@@ -6,7 +6,6 @@
 ```shell
 $ ./getquota.sh 
 $ Current quota: 5.4
-$ Current salary in BRL: 5400
 ```
 
 
