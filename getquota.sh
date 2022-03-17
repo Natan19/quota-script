@@ -20,4 +20,7 @@ calculateConvertedAmount() {
 USD_QUOTA=$(getCurrentUsdQuota)
 
 echo "Current USD-BRL quota: $USD_QUOTA"
-echo "Current salary in BRL: $(calculateConvertedAmount $USD_QUOTA $AMOUNT)"
+
+if [[  "$AMOUNT" -ne 0 ]]; then
+  echo "Current salary in BRL: $(calculateConvertedAmount $USD_QUOTA $AMOUNT)"
+fi
